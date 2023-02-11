@@ -587,11 +587,47 @@ nav {
   width: 100px;
   border: 2px solid #ff9a3d;
   transition: 0.2s ease;
+  cursor: pointer;
+  position: relative;
 }
-.contact-left form button:hover {
+.btn-background {
+  background-color: transparent;
+}
+.button-text {
+  transition: 0.2 ease;
+}
+.button-loading .button-text {
+  visibility: hidden;
+  opacity: 0;
+}
+.button-loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid transparent;
+  border-top-color: #ff9a3d;
+  border-bottom-color: #ff9a3d;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s linear infinite;
+}
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* .contact-left form button:active{
   background-color: transparent;
   color: #ff9a3d;
-}
+} */
 #submit-msg {
   color: #ff9a3d;
   display: none;
