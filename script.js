@@ -145,15 +145,35 @@ var swiper = new Swiper(".all-achievements", {
 
 /******************************* contact section *******************************/
 
+const subBtn = document.querySelector(".contact-left form button");
+subBtn.addEventListener("mouseover", () => {
+  subBtn.style.backgroundColor = "transparent";
+  subBtn.style.color = "#ff9a3d";
+});
+function hoverEffectOnLeaving() {
+  subBtn.style.backgroundColor = "#ff9a3d";
+  subBtn.style.color = "#050908";
+}
+subBtn.addEventListener("mouseleave", hoverEffectOnLeaving);
+
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzooNGeErOyN_dflHvmywSU-HWOYUZJ6yiBsiEbFZR-SCIWAHXkVVbhEB1yfJw3Dczg/exec";
 const form = document.forms["submit-to-google-sheet"];
 const submitMsg = document.getElementById("submit-msg");
 
 form.addEventListener("submit", (e) => {
+  subBtn.style.backgroundColor = "transparent";
+  subBtn.classList.add("button-loading");
+  subBtn.style.cursor = "auto";
+  subBtn.removeEventListener("mouseleave", hoverEffectOnLeaving);
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
+      subBtn.style.backgroundColor = "#ff9a3d";
+      subBtn.style.color = "#050908";
+      subBtn.classList.remove("button-loading");
+      subBtn.style.cursor = "pointer";
+      subBtn.addEventListener("mouseleave", hoverEffectOnLeaving);
       submitMsg.innerHTML = "Message sent successfully!";
       submitMsg.style.display = "block";
       setTimeout(() => {
@@ -163,6 +183,11 @@ form.addEventListener("submit", (e) => {
       form.reset();
     })
     .catch((error) => {
+      subBtn.style.backgroundColor = "#ff9a3d";
+      subBtn.style.color = "#050908";
+      subBtn.classList.remove("button-loading");
+      subBtn.style.cursor = "pointer";
+      subBtn.addEventListener("mouseleave", hoverEffectOnLeaving);
       submitMsg.innerHTML = "Could not send message! Something went wrong!";
       submitMsg.style.display = "block";
       setTimeout(() => {
