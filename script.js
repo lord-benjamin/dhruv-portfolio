@@ -146,6 +146,7 @@ var swiper = new Swiper(".all-achievements", {
 /******************************* contact section *******************************/
 
 const subBtn = document.querySelector(".contact-left form button");
+const clearBtn  = document.querySelector(".clear");
 subBtn.addEventListener("mouseover", () => {
   subBtn.style.backgroundColor = "transparent";
   subBtn.style.color = "#ff9a3d";
@@ -160,6 +161,10 @@ const scriptURL =
   "https://script.google.com/macros/s/AKfycbzooNGeErOyN_dflHvmywSU-HWOYUZJ6yiBsiEbFZR-SCIWAHXkVVbhEB1yfJw3Dczg/exec";
 const form = document.forms["submit-to-google-sheet"];
 const submitMsg = document.getElementById("submit-msg");
+
+clearBtn.addEventListener("click",()=>{
+  form.reset();
+})
 
 form.addEventListener("submit", (e) => {
   subBtn.style.backgroundColor = "transparent";
