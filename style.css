@@ -580,7 +580,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-.contact-left form button {
+.sub {
   display: inline-block;
   margin-top: 20px;
   font-size: 18px;
@@ -628,9 +628,22 @@ nav {
     transform: rotate(1turn);
   }
 }
-.clear:hover {
+.clear {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
   background-color: transparent;
+  border-radius: 8px;
+  padding: 10px;
   color: #ff9a3d;
+  width: auto;
+  border: 2px solid #ff9a3d;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.clear:hover {
+  background-color: #ff9a3d;
+  color: #050908;
 }
 #submit-msg {
   color: #ff9a3d;
