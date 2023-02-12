@@ -145,7 +145,7 @@ var swiper = new Swiper(".all-achievements", {
 
 /******************************* contact section *******************************/
 
-const subBtn = document.querySelector(".contact-left form button");
+const subBtn = document.querySelector(".sub");
 const clearBtn = document.querySelector(".clear");
 subBtn.addEventListener("mouseover", () => {
   subBtn.style.backgroundColor = "transparent";
