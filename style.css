@@ -588,7 +588,7 @@ nav {
   border-radius: 8px;
   padding: 10px;
   color: #050908;
-  width: 100px;
+  width: auto;
   border: 2px solid #ff9a3d;
   transition: 0.2s ease;
   cursor: pointer;
