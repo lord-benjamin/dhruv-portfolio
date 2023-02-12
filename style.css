@@ -576,7 +576,7 @@ nav {
 .contact-left form textarea {
   resize: none;
 }
-.contact-left form div{
+.contact-left form div {
   display: flex;
   justify-content: space-between;
 }
@@ -628,7 +628,7 @@ nav {
     transform: rotate(1turn);
   }
 }
-.clear:hover{
+.clear:hover {
   background-color: transparent;
   color: #ff9a3d;
 }
