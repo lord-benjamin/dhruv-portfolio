@@ -576,8 +576,12 @@ nav {
 .contact-left form textarea {
   resize: none;
 }
+.contact-left form div{
+  display: flex;
+  justify-content: space-between;
+}
 .contact-left form button {
-  display: block;
+  display: inline-block;
   margin-top: 20px;
   font-size: 18px;
   background-color: #ff9a3d;
@@ -624,10 +628,10 @@ nav {
     transform: rotate(1turn);
   }
 }
-/* .contact-left form button:active{
+.clear:hover{
   background-color: transparent;
   color: #ff9a3d;
-} */
+}
 #submit-msg {
   color: #ff9a3d;
   display: none;
