@@ -118,6 +118,7 @@ for (let i = 0; i < skillTitles.length; i++) {
     skillTitles[i].classList.add("active-title");
     skillsArea[i].classList.remove("inactive-tab");
     skillsArea[i].classList.add("active-tab");
+    AOS.refresh();
   });
 }
 
