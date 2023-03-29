@@ -27,7 +27,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -36,7 +36,16 @@
       <i class="fa-solid fa-angles-up"></i>
     </div>
     <!----------------------------------------- home section ----------------------------------------->
-
+    <ul id="resp-nav-heads">
+      <i id="cross" class="fa-solid fa-xmark"></i>
+      <li><a class="resp-nav-title" href="#home">Home</a></li>
+      <li><a class="resp-nav-title" href="#about">About</a></li>
+      <li><a class="resp-nav-title" href="#resume">Resume</a></li>
+      <li><a class="resp-nav-title" href="#project">Projects</a></li>
+      <li><a class="resp-nav-title" href="#skill">Skills</a></li>
+      <li><a class="resp-nav-title" href="#achievement">Achievements</a></li>
+      <li><a class="resp-nav-title" href="#contact">Contact</a></li>
+    </ul>
     <div id="home" class="section">
       <nav data-aos="fade-up">
         <a id="logo" href="https://dhruv-arora.vercel.app/"
@@ -50,9 +59,8 @@
           <li><a class="nav-title" href="#skill">Skills</a></li>
           <li><a class="nav-title" href="#achievement">Achievements</a></li>
           <li><a class="nav-title" href="#contact">Contact</a></li>
-          <!-- <i class="fa-solid fa-xmark menu-icons"></i> -->
         </ul>
-        <!-- <i class="fa-solid fa-bars menu-icons"></i> -->
+        <i id="menu" class="fa-solid fa-bars"></i>
       </nav>
       <div class="home-text" data-aos="zoom-in">
         <h1>Dhruv Arora</h1>
@@ -183,7 +191,63 @@
           <a class="skl-title inactive-title" href="#skill">Frameworks</a>
         </li>
       </ul>
-      <div class="skills active-tab">
+      <!-- ---------------------------------------Language--------------------------------------- -->
+      <!-- -------------Language - small screen------------- -->
+      <div class="resp-skills-small">
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/c++.png" alt="c++" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/html.png" alt="html" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/css.png" alt="css" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/js.png" alt="javascript" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/c.png" alt="c" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/py.png" alt="python" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/dart.png" alt="dart" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------Language - medium screen------------- -->
+      <div class="resp-skills-med">
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/c++.png" alt="c++" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/html.png" alt="html" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/dart.png" alt="dart" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/py.png" alt="python" />
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/css.png" alt="css" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/c.png" alt="c" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/js.png" alt="javascript" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------Language - large screen------------- -->
+      <div class="skills">
         <div class="col">
           <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
             <img src="images/c++.png" alt="c++" />
@@ -212,7 +276,81 @@
           </div>
         </div>
       </div>
-      <div class="skills inactive-tab">
+      <!-- ---------------------------------------Tool--------------------------------------- -->
+      <!-- -------------Tool - small screen------------- -->
+      <div class="resp-skills-small">
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/git.png" alt="git" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/github.png" alt="github" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/codechef.png" alt="codechef" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/leetcode.png" alt="leetcode" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/vscode.png" alt="vscode" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/sublime.png" alt="sublime" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/ejs.png" alt="ejs" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/mongodb.png" alt="mongodb" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/codepen.png" alt="codepen" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/gcp.png" alt="google-cloud-platform" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------Tool - medium screen------------- -->
+      <div class="resp-skills-med">
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/git.png" alt="git" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/codechef.png" alt="codechef" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/ejs.png" alt="ejs" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/gcp.png" alt="google-cloud-platform" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/codepen.png" alt="codepen" />
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/github.png" alt="github" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/leetcode.png" alt="leetcode" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/mongodb.png" alt="mongodb" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/vscode.png" alt="vscode" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/sublime.png" alt="sublime" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------Tool - large screen------------- -->
+      <div class="skills">
         <div class="col">
           <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
             <img src="images/git.png" alt="git" />
@@ -250,7 +388,45 @@
           </div>
         </div>
       </div>
-      <div class="skills inactive-tab">
+      <!-- ---------------------------------------Framework--------------------------------------- -->
+      <!-- -------------Framework - small screen------------- -->
+      <div class="resp-skills-small">
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/node.png" alt="node" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/express.png" alt="express" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/mongoose.png" alt="mongoose" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/flutter.png" alt="flutter" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------Framework - medium screen------------- -->
+      <div class="resp-skills-med">
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/node.png" alt="node" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/mongoose.png" alt="mongoose" />
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/express.png" alt="express" />
+          </div>
+          <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
+            <img src="images/flutter.png" alt="flutter" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------Framework - large screen------------- -->
+      <div class="skills">
         <div class="col">
           <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
             <img src="images/node.png" alt="node" />
@@ -281,7 +457,9 @@
       <div class="all-achievements swiper" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="achieve-card swiper-slide">
-            <img src="images/hacktoberfest.png" alt="hacktoberfest" />
+            <div class="achieve-img">
+              <img src="images/hacktoberfest.png" alt="hacktoberfest" />
+            </div>
             <div class="achieve-content">
               <p>
                 Participated in a worldwide fest for open source contribution
@@ -293,7 +471,9 @@
             </div>
           </div>
           <div class="achieve-card swiper-slide">
-            <img src="images/gcrf.png" alt="gcrf" />
+            <div class="achieve-img">
+              <img src="images/gcrf.png" alt="gcrf" />
+            </div>
             <div class="achieve-content">
               <p>
                 Reached the 3rd Milestone in one of the finest programs provided
@@ -305,7 +485,9 @@
             </div>
           </div>
           <div class="achieve-card swiper-slide">
-            <img src="images/learn-to-earn.png" alt="google-learn-to-earn" />
+            <div class="achieve-img">
+              <img src="images/learn-to-earn.png" alt="google-learn-to-earn" />
+            </div>
             <div class="achieve-content">
               <p>
                 Earned various swags and goodies in the google cloud challenge
@@ -380,6 +562,28 @@
             ></a>
           </div>
         </div>
+        <div class="resp-contact-right" data-aos="fade-up">
+          <p><i class="fa-solid fa-user"></i> Dhruv Arora</p>
+          <p><i class="fa-solid fa-location-dot"></i> Gurgaon, India</p>
+          <p><i class="fa-solid fa-envelope"></i> dhruvarora2612@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91 7678582948</p>
+          <div class="social-icons">
+            <a href="https://linktr.ee/dhruv_arora" target="_blank"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dhruv-arora-legit/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/lord-benjamin" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/dhruv_a_26/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -393,13 +597,16 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
       AOS.init({
         offset: window.innerHeight / 2 - 96,
         duration: 1000,
+        disable: function () {
+          return window.innerWidth < 1000;
+        },
       });
     </script>
   </body>
