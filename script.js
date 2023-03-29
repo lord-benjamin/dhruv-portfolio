@@ -30,8 +30,10 @@ window.onscroll = () => {
     scrollUpBtn.classList.remove("show-scroll-up-btn");
   }
 };
+
 const navTitles = document.querySelectorAll(".nav-title");
 const navSections = document.querySelectorAll(".section");
+const respNavTitles = document.querySelectorAll(".resp-nav-title");
 const tabName = document.querySelector("title");
 function navActiveness() {
   let index = navSections.length;
@@ -43,8 +45,12 @@ function navActiveness() {
     title.classList.remove("active-title");
     title.classList.add("inactive-title");
   });
+  respNavTitles.forEach((title) => {
+    title.style.color = "white";
+  });
   navTitles[index].classList.remove("inactive-title");
   navTitles[index].classList.add("active-title");
+  respNavTitles[index].style.color = "#050908";
   if (navTitles[index].innerHTML === "Home") {
     tabName.innerHTML = "Dhruv Arora";
   } else {
@@ -53,6 +59,35 @@ function navActiveness() {
 }
 navActiveness();
 window.addEventListener("scroll", navActiveness);
+
+respNavTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    navSections.forEach((section) => {
+      section.style.visibility = "visible";
+    });
+    respNavList.style.display = "none";
+    scrollUpBtn.style.visibility = "visible";
+  });
+});
+
+const respNavList = document.querySelector("#resp-nav-heads");
+const menu = document.querySelector("#menu");
+const cross = document.querySelector("#cross");
+const all = document.querySelectorAll("*");
+menu.addEventListener("click", () => {
+  navSections.forEach((section) => {
+    section.style.visibility = "hidden";
+  });
+  respNavList.style.display = "block";
+  scrollUpBtn.style.visibility = "hidden";
+});
+cross.addEventListener("click", () => {
+  navSections.forEach((section) => {
+    section.style.visibility = "visible";
+  });
+  respNavList.style.display = "none";
+  scrollUpBtn.style.visibility = "visible";
+});
 
 /******************************* resume section *******************************/
 
@@ -106,18 +141,67 @@ for (let i = 0; i < image.length; i++) {
 
 const skillTitles = document.querySelectorAll(".skl-title");
 const skillsArea = document.querySelectorAll(".skills");
+const smallSkillsArea = document.querySelectorAll(".resp-skills-small");
+const medSkillsArea = document.querySelectorAll(".resp-skills-med");
+
+function getTheSkillSet(active) {
+  if (window.innerWidth > 750) {
+    smallSkillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    medSkillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    skillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    skillsArea[active].style.display = "flex";
+  } else if (window.innerWidth > 500) {
+    smallSkillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    medSkillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    skillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    medSkillsArea[active].style.display = "flex";
+  } else {
+    smallSkillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    medSkillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    skillsArea.forEach((area) => {
+      area.style.display = "none";
+    });
+    smallSkillsArea[active].style.display = "flex";
+  }
+}
+getTheSkillSet(0);
+window.addEventListener("resize", () => {
+  getTheSkillSet(0);
+});
+window.addEventListener("load", () => {
+  getTheSkillSet(0);
+});
 for (let i = 0; i < skillTitles.length; i++) {
   skillTitles[i].addEventListener("click", () => {
-    for (let j = 0; j < skillTitles.length; j++) {
-      skillTitles[j].classList.add("inactive-title");
-      skillTitles[j].classList.remove("active-title");
-      skillsArea[j].classList.add("inactive-tab");
-      skillsArea[j].classList.remove("active-tab");
-    }
+    skillTitles.forEach((title) => {
+      title.classList.add("inactive-title");
+      title.classList.remove("active-title");
+    });
     skillTitles[i].classList.remove("inactive-title");
     skillTitles[i].classList.add("active-title");
-    skillsArea[i].classList.remove("inactive-tab");
-    skillsArea[i].classList.add("active-tab");
+    getTheSkillSet(i);
+    window.addEventListener("resize", () => {
+      getTheSkillSet(i);
+    });
+    window.addEventListener("load", () => {
+      getTheSkillSet(i);
+    });
     AOS.refresh();
   });
 }
