@@ -371,6 +371,22 @@ nav {
   color: #ff9a3d;
   transform: scale(1.2);
 }
+#more-projects {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: #ff9a3d;
+  border-radius: 8px;
+  padding: 10px;
+  color: #050908;
+  width: auto;
+  border: 2px solid #ff9a3d;
+  cursor: pointer;
+}
+#more-projects:hover {
+  background-color: transparent;
+  color: #ff9a3d;
+}
 
 /******************* skill section *******************/
 
@@ -905,6 +921,5 @@ nav .menu-icons {
     transform: translate(-50%, -50%) scale(0.95);
     display: none;
     padding: 20px;
-    /* transform: scale(0.9); */
   }
 }
