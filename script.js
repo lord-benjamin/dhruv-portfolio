@@ -286,3 +286,13 @@ form.addEventListener("submit", (e) => {
       }, 5000);
     });
 });
+
+/******************************* footer *******************************/
+
+const footer = document.querySelector(".footer");
+const d = new Date();
+const currentYear = d.getFullYear();
+footer.innerHTML = `<p>
+  Designed and Developed by <span>Dhruv Arora</span>.
+  <i class="fa-regular fa-copyright"></i> ${currentYear} All Rights Reserved
+</p>`;
