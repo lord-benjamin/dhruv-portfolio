@@ -620,6 +620,25 @@ nav {
   width: 100%;
   display: block;
 }
+.form-labels {
+  display: flex;
+  align-items: center;
+}
+.form-labels hr {
+  border: 1px solid #ff9a3d80;
+}
+.left {
+  width: 4%;
+}
+.right {
+  width: 100%;
+}
+.form-labels label {
+  margin: 0 8px;
+}
+.form-labels label span {
+  color: #ff9a3d;
+}
 .contact-left form input,
 .contact-left form textarea {
   min-width: 200px;
@@ -628,21 +647,31 @@ nav {
   outline: none;
   background: white;
   padding: 15px;
-  margin: 10px 0;
   color: #050908;
   font-size: 18px;
   border-radius: 8px;
 }
+.contact-left form input {
+  margin: 10px 0 20px 0;
+}
 .contact-left form textarea {
+  margin: 10px 0 5px 0;
   resize: none;
 }
 .contact-left form div {
   display: flex;
   justify-content: space-between;
 }
+#required-indicator {
+  text-align: right;
+  font-weight: lighter;
+}
+#required-indicator span {
+  color: #ff9a3d;
+}
 .sub {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 18px;
   background-color: #ff9a3d;
   border-radius: 8px;
@@ -690,7 +719,7 @@ nav {
 }
 .clear {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 18px;
   background-color: transparent;
   border-radius: 8px;
@@ -738,14 +767,18 @@ nav {
   margin: 30px;
   display: block;
 }
-.contact-right p {
+.contact-right {
+  display: flex;
+  align-items: center;
+}
+.contact-right div p {
   display: flex;
   margin: 10px;
   font-size: 18px;
   align-items: center;
   justify-content: right;
 }
-.contact-right p i {
+.contact-right div p i {
   color: #ff9a3d;
   font-size: 25px;
   margin: 10px 20px;
@@ -910,6 +943,9 @@ nav .menu-icons {
   .swiper-button-next {
     margin-right: 1%;
     transform: translateY(-200%);
+  }
+  .left {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 410px) {
