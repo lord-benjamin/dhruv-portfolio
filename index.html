@@ -547,21 +547,38 @@
             autocomplete="off"
             autocapitalize="sentences"
           >
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="Email"
-              placeholder="Your Email"
-              required
-            />
-            <input type="text" name="Subject" placeholder="Subject" />
+            <div class="form-labels">
+              <hr class="left" />
+              <label>Name&nbsp<span>*</span></label>
+              <hr class="right" />
+            </div>
+            <input type="text" name="Name" placeholder="Name..." required />
+            <div class="form-labels">
+              <hr class="left" />
+              <label>Email&nbsp<span>*</span></label>
+              <hr class="right" />
+            </div>
+            <input type="email" name="Email" placeholder="Email..." required />
+            <div class="form-labels">
+              <hr class="left" />
+              <label>Subject</label>
+              <hr class="right" />
+            </div>
+            <input type="text" name="Subject" placeholder="Subject..." />
+            <div class="form-labels">
+              <hr class="left" />
+              <label>Message&nbsp<span>*</span></label>
+              <hr class="right" />
+            </div>
             <textarea
-              name="Message"
-              id=""
               rows="4"
-              placeholder="Your Message"
+              name="Message"
+              placeholder="Message..."
               required
             ></textarea>
+            <h4 id="required-indicator">
+              Fields marked with <span>*</span> are mandatory.
+            </h4>
             <div>
               <button type="submit" class="sub">
                 <span class="button-text">Submit</span>
@@ -572,24 +589,26 @@
           <span id="submit-msg"></span>
         </div>
         <div class="contact-right" data-aos="fade-up" data-aos-delay="300">
-          <p>Dhruv Arora <i class="fa-solid fa-user"></i></p>
-          <p>Gurgaon, India <i class="fa-solid fa-location-dot"></i></p>
-          <p>dhruvarora2612@gmail.com <i class="fa-solid fa-envelope"></i></p>
-          <div class="social-icons">
-            <a href="https://linktr.ee/dhruv_arora" target="_blank"
-              ><i class="fa-solid fa-link"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/dhruv-arora-legit/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/lord-benjamin" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://www.instagram.com/dhruv_a_26/" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+          <div>
+            <p>Dhruv Arora <i class="fa-solid fa-user"></i></p>
+            <p>Gurgaon, India <i class="fa-solid fa-location-dot"></i></p>
+            <p>dhruvarora2612@gmail.com <i class="fa-solid fa-envelope"></i></p>
+            <div class="social-icons">
+              <a href="https://linktr.ee/dhruv_arora" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dhruv-arora-legit/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/lord-benjamin" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/dhruv_a_26/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
           </div>
         </div>
         <div class="resp-contact-right" data-aos="fade-up">
