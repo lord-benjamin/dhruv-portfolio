@@ -116,16 +116,20 @@ const image = document.querySelectorAll(".proj img");
 const imgContent = document.querySelectorAll(".content");
 for (let i = 0; i < image.length; i++) {
   projCard[i].addEventListener("mouseover", () => {
-    image[i].style.filter = "blur(10px)";
+    image[i].style.filter = "blur(5px) brightness(0.5)";
     // projCard[i].style.margin = "40px 20px 20px 20px";
-    image[i].style.transform = "scale(1.08)";
-    imgContent[i].style.display = "block";
+    image[i].style.transform = "scale(5)";
+    // image[i].style.filter = "brightness(0.5)";
+    // imgContent[i].style.display = "block";
+    imgContent[i].style.transform = "translate(-50%, -50%) scale(1)";
   });
   projCard[i].addEventListener("mouseleave", () => {
-    image[i].style.filter = "blur(0)";
+    image[i].style.filter = "blur(0) brightness(1)";
     // projCard[i].style.margin = "30px 20px";
     image[i].style.transform = "scale(1)";
-    imgContent[i].style.display = "none";
+    // image[i].style.filter = "brightness(1)";
+    // imgContent[i].style.display = "none";
+    imgContent[i].style.transform = "translate(-50%, -50%) scale(0)";
   });
 }
 
