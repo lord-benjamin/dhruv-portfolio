@@ -104,6 +104,9 @@ nav {
   justify-content: space-between;
   background: #ff9a3d;
   overflow: scroll;
+  transition: 0.5s ease;
+  transform: translateX(100%);
+  z-index: 3;
 }
 #resp-nav-heads li {
   margin: 30px auto;
@@ -843,9 +846,6 @@ nav .menu-icons {
   .nav-heads {
     display: flex;
   }
-  #resp-nav-heads {
-    display: none;
-  }
   #menu {
     display: none;
   }
@@ -869,9 +869,6 @@ nav .menu-icons {
     width: fit-content;
   }
   .nav-heads {
-    display: none;
-  }
-  #resp-nav-heads {
     display: none;
   }
 }
@@ -950,12 +947,22 @@ nav .menu-icons {
 }
 @media only screen and (max-width: 410px) {
   .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: -50%;
-    transform: translate(-50%, -50%) scale(0.95);
-    display: none;
-    padding: 20px;
+    font-size: 13px;
+  }
+  .content a {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .content {
+    padding: 20px 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .content {
+    font-size: 11px;
+  }
+  .content a {
+    font-size: 18px;
   }
 }

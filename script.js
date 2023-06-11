@@ -62,11 +62,7 @@ window.addEventListener("scroll", navActiveness);
 
 respNavTitles.forEach((title) => {
   title.addEventListener("click", () => {
-    navSections.forEach((section) => {
-      section.style.visibility = "visible";
-    });
-    respNavList.style.display = "none";
-    scrollUpBtn.style.visibility = "visible";
+    respNavList.style.transform = "translate(100%)";
   });
 });
 
@@ -75,18 +71,14 @@ const menu = document.querySelector("#menu");
 const cross = document.querySelector("#cross");
 const all = document.querySelectorAll("*");
 menu.addEventListener("click", () => {
-  navSections.forEach((section) => {
-    section.style.visibility = "hidden";
-  });
-  respNavList.style.display = "block";
-  scrollUpBtn.style.visibility = "hidden";
+  // navSections.forEach((section) => {
+  //   section.style.visibility = "hidden";
+  // });
+  respNavList.style.transform = "translateX(0)";
+  // scrollUpBtn.style.visibility = "hidden";
 });
 cross.addEventListener("click", () => {
-  navSections.forEach((section) => {
-    section.style.visibility = "visible";
-  });
-  respNavList.style.display = "none";
-  scrollUpBtn.style.visibility = "visible";
+  respNavList.style.transform = "translateX(100%)";
 });
 
 /******************************* resume section *******************************/
