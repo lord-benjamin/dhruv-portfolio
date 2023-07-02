@@ -876,6 +876,12 @@ nav .menu-icons {
   }
 }
 @media only screen and (max-width: 750px) {
+  #home {
+    background-image: url("images/resp-parallax.png");
+  }
+  .auto-type {
+    color: #ff9a3d;
+  }
   .home-text {
     top: 20%;
   }
