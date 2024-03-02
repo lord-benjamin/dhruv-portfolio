@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   box-sizing: border-box;
 }
 body,
@@ -12,6 +12,8 @@ html {
   color: white;
   scroll-behavior: smooth;
 }
+
+/******************* scroll up button *******************/
 .scroll-up-btn {
   position: fixed;
   background-color: #ff9a3d;
@@ -38,10 +40,33 @@ html {
   pointer-events: auto;
 }
 
+/******************* discontinuation *******************/
+.discontinue {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a3d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  cursor: default;
+}
+.discontinue a {
+  color: #050908;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
 /******************* home section *******************/
 
 #home {
-  background-image: url("images/parallax.png");
+  background-image: url('images/parallax.png');
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -49,10 +74,11 @@ html {
   background-size: cover;
   position: relative;
   background-color: rgb(50, 50, 50);
+  /* transform: translateY(50px); */
 }
 nav {
   position: fixed;
-  top: 0;
+  top: 50px;
   width: 100%;
   justify-items: center;
   display: flex;
@@ -72,7 +98,7 @@ nav {
   font-weight: 900;
   display: inline;
   letter-spacing: 3px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 #front-D {
   color: #ff9a3d;
@@ -119,7 +145,7 @@ nav {
   letter-spacing: 1px;
 }
 .nav-title::before {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   background-color: #ff9a3d;
@@ -129,7 +155,7 @@ nav {
   transition: 0.2s ease;
 }
 .nav-title::after {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   background-color: #ff9a3d;
@@ -139,7 +165,7 @@ nav {
   transition: 0.2s ease;
 }
 .nav-title:hover::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   background-color: #ff9a3d;
@@ -148,7 +174,7 @@ nav {
   top: -5px;
 }
 .nav-title:hover::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   background-color: #ff9a3d;
@@ -183,10 +209,10 @@ nav {
 #about {
   /* height: 100%; */
   text-align: center;
-  padding-top: 96px;
+  padding-top: 146px;
 }
 .headings::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 3px;
   background-color: white;
@@ -200,7 +226,7 @@ nav {
   justify-content: center;
 }
 .about-title::after {
-  content: "who i am";
+  content: 'who i am';
   background-color: #050908;
   color: #ff9a3d;
   padding: 0 5px;
@@ -251,10 +277,10 @@ nav {
 #resume {
   /* height: 100%; */
   text-align: center;
-  padding-top: 96px;
+  padding-top: 146px;
 }
 .resume-title::after {
-  content: "what i highlight";
+  content: 'what i highlight';
   background-color: #050908;
   color: #ff9a3d;
   padding: 0 5px;
@@ -307,10 +333,10 @@ nav {
 #project {
   /* height: 100%; */
   text-align: center;
-  padding-top: 96px;
+  padding-top: 146px;
 }
 .project-title::after {
-  content: "what i made";
+  content: 'what i made';
   background-color: #050908;
   color: #ff9a3d;
   padding: 0 5px;
@@ -399,10 +425,10 @@ nav {
 #skill {
   /* height: 100%; */
   text-align: center;
-  padding-top: 96px;
+  padding-top: 146px;
 }
 .skill-title::after {
-  content: "what i know";
+  content: 'what i know';
   background-color: #050908;
   color: #ff9a3d;
   padding: 0 5px;
@@ -426,7 +452,7 @@ nav {
   position: relative;
 }
 .skl-title::before {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   background-color: #ff9a3d;
@@ -436,7 +462,7 @@ nav {
   transition: 0.2s ease;
 }
 .skl-title::after {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   background-color: #ff9a3d;
@@ -446,7 +472,7 @@ nav {
   transition: 0.2s ease;
 }
 .skl-title:hover::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   background-color: #ff9a3d;
@@ -455,7 +481,7 @@ nav {
   top: -5px;
 }
 .skl-title:hover::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   background-color: #ff9a3d;
@@ -514,10 +540,10 @@ nav {
 #achievement {
   /* height: 100%; */
   text-align: center;
-  padding-top: 96px;
+  padding-top: 146px;
 }
 .achievement-title::after {
-  content: "what i accomplished";
+  content: 'what i accomplished';
   background-color: #050908;
   color: #ff9a3d;
   padding: 0 5px;
@@ -600,10 +626,10 @@ nav {
 #contact {
   /* height: 100%; */
   text-align: center;
-  padding-top: 96px;
+  padding-top: 146px;
 }
 .contact-title::after {
-  content: "get in touch";
+  content: 'get in touch';
   background-color: #050908;
   color: #ff9a3d;
   padding: 0 5px;
@@ -700,7 +726,7 @@ nav {
   opacity: 0;
 }
 .button-loading::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -877,13 +903,13 @@ nav .menu-icons {
 }
 @media only screen and (max-width: 750px) {
   #home {
-    background-image: url("images/resp-parallax.png");
+    background-image: url('images/resp-parallax.png');
   }
   .auto-type {
     color: #ff9a3d;
   }
   .home-text {
-    top: 20%;
+    top: 40%;
   }
   .about-main {
     display: block;
@@ -926,6 +952,7 @@ nav .menu-icons {
 @media only screen and (max-width: 500px) {
   .home-text {
     left: 5%;
+    top: 30%;
   }
   .about-main div {
     width: 60%;
