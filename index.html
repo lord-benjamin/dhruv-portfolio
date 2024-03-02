@@ -32,9 +32,22 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- Scroll Up Button -->
     <div class="scroll-up-btn">
       <i class="fa-solid fa-angles-up"></i>
     </div>
+    <!-- Discontinuation -->
+    <marquee
+      class="discontinue"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+    >
+      Thank you for visiting! Please note that this portfolio is no longer being
+      updated as of January 21, 2024. For my most recent work and updates,
+      kindly visit my
+      <a href="https://dhruv-arora.vercel.app">new portfolio</a>. See you
+      there!</marquee
+    >
     <!----------------------------------------- home section ----------------------------------------->
     <ul id="resp-nav-heads">
       <i id="cross" class="fa-solid fa-xmark"></i>
@@ -77,8 +90,8 @@
           <img src="images/Dhruv Arora.png" alt="dhruv img" id="my-image" />
         </div>
         <p>
-          Hello I'm Dhruv Arora, a CSE pre-final year undergraduate student with a
-          passion for technology. My goal is to use my skills and knowledge to
+          Hello I'm Dhruv Arora, a CSE pre-final year undergraduate student with
+          a passion for technology. My goal is to use my skills and knowledge to
           fulfill the required needs.<br /><br />I believe in the power of hard
           work and perseverance, and I'm always striving to improve and create
           my projects. As <strong>Thomas Edison</strong> once said,
@@ -125,13 +138,9 @@
           <div class="content">
             <h2>CINEVAULT</h2>
             <strong>About</strong>
-            <p>
-              An ultimate movie database for movies and tv series lovers.
-            </p>
+            <p>An ultimate movie database for movies and tv series lovers.</p>
             <strong>Tech Stack</strong>
-            <p>
-              ReactJS, TMDB API, CSS, Tailwind CSS, Vite
-            </p>
+            <p>ReactJS, TMDB API, CSS, Tailwind CSS, Vite</p>
             <a
               href="https://github.com/lord-benjamin/CineVault---Your-Gateway-To-Cinema"
               target="_blank"
@@ -171,9 +180,7 @@
           <div class="content">
             <h2>CINEMAN</h2>
             <strong>About</strong>
-            <p>
-              A free movie streaming website template.
-            </p>
+            <p>A free movie streaming website template.</p>
             <strong>Tech Stack</strong>
             <p>HTML, CSS, Vanilla JS, JSON</p>
             <a
@@ -255,7 +262,6 @@
           <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
             <img src="images/c.png" alt="c" />
           </div>
-          
         </div>
         <div class="col">
           <div data-aos="flip-down" data-aos-offset="100" data-aos-delay="500">
@@ -673,7 +679,7 @@
     <script src="script.js"></script>
     <script>
       AOS.init({
-        offset: window.innerHeight / 2 - 96,
+        offset: window.innerHeight / 2 - 146,
         duration: 1000,
         disable: function () {
           return window.innerWidth < 1000;
