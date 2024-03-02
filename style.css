@@ -51,7 +51,6 @@ html {
   right: 0;
   z-index: 100;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: black;
   font-size: 18px;
